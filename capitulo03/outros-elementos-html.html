@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <title>Outros Elementos HTML</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <header>
+    <h1>Elementos da HTML</h1>
+    <nav>
+      <h2>Elementos in-line</h2>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#tag-b-strong"><b>&lt;b&gt;</b> & <strong>&lt;strong&gt;</strong></a></li>
+        <li><a href="#tag-i-em"><i>&lt;i&gt;</i> & <em>&lt;em&gt;</em></a></li>
+        <li><a href="#tag-small"><small>&lt;small&gt;</small></a></li>
+        <li><a href="#tag-code"><code>&lt;code&gt;</code></a></li>
+        <li><a href="#tag-hr">hr</a></li>
+        <li><a href="#tag-span"><span>span</span></a></li>
+      </ul>
+    </nav>
+    
+    <nav>
+      <h2>Elementos block-level</h2>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#tag-header">&lt;header&gt;</a></li>
+        <li><a href="#tag-nav">&lt;nav&gt;</a></li>
+        <li><a href="#tag-aside">&lt;aside&gt;</a></li>
+        <li><a href="#tag-main">&lt;main&gt;</a></li>
+        <li><a href="#tag-div">&lt;div&gt;</a></li>
+        <li><a href="#tag-article">&lt;article&gt;</a></li>
+        <li><a href="#tag-section">&lt;section&gt;</a></li>
+        <li><a href="#tag-footer">&lt;footer&gt;</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+
+  <hr> 
+
+  <main>
+    <section>
+      <h2>Guia de Elementos &quot;in-line&quot;</h2>
+
+      <article id="tag-b-strong">
+        <h3>Elementos &lt;b&gt; e &lt;strong&gt;</h3>
+        <dl>
+          <dt>Elemento <b>&lt;b&gt;</b></dt>
+            <dd>Serve apenas para estilização visual em <b>negrito</b>;</dd>
+          <dt>Elemento <strong>&lt;strong&gt;</strong></dt>
+            <dd>Além do anterior, este serve também para dar <strong>forte ênfase</strong>
+            sendo útil por exemplo no uso de leitores de tela;</dd>
+        </dl>
+      </article>
+
+      <article id="tag-i-em">
+        <h3>Elementos &lt;i&gt; e &lt;em&gt;</h3>
+        <dl>
+          <dt>Elemento <i>&lt;i&gt;</i></dt>
+            <dd>Serve apenas para estilização visual em <i>itálico</i>;</dd>
+          <dt>Elemento <em>&lt;em&gt;</em></dt>
+          <dd>Além do anterior serve também para <em>ênfase</em> 
+            com uso similar ao conjunto de elementos anterior;</dd>
+        </dl>
+      </article>
+
+      <article id="tag-small">
+        <h3>Elemento &lt;small&gt;</h3>
+        <p>
+          Serve para marcar pequenos trechos de texto 
+          relacionados com o conteúdo do texto onde foram marcados
+          renderizando-os em tamanho menor que o texto em que foi marcado.
+          <br><br> <small>muito útil para notas como advertências e rodapé</small>
+        </p>
+      </article>
+
+      <article id="tag-code">
+        <h3>Elemento &lt;code&gt;</h3>
+        <p>
+          Este elemento serve para marcar código de computador ou então
+          qualquer string que possa ser reconhecida pelo computador.
+        </p>
+          
+        <br>
+
+        <ul>
+          <li>Elementos HTML como <code>div</code></li>
+          <li>Códigos como <code>const exist = (val) => val != null;</code></li>
+        </ul>
+      </article>
+
+      <article id="tag-hr">
+        <h3>Elemento &lt;hr&gt;</h3>
+        <p>
+          Representa uma quebra temática entre conteúdos relacionados,
+          sendo renderizada normalmente como uma linha horizontal.
+        </p>
+      </article>
+
+      <article id="tag-span">
+        <h3>Elemento &lt;span&gt;</h3>
+        <p>
+          o elemento span assim como a &lt;div&gt; é um elemento sem valor semântico,
+          e acaba sendo muito similar com a diferença de ser <span>in-line</span>.
+          Igualmente seu uso se torna expressivo com CSS para estilização.
+        </p>
+      </article>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Guia de Elementos &quot;block-level&quot;</h2>
+
+      <article id="tag-header">
+        <h3>Elemento &lt;header&gt;</h3>
+        <p>Serve na marcação de conteúdo introdutório, aqui normalmente temos tags como h1-h6, 
+          auxilia na navegação e contém logotipos</p>
+      </article>
+
+      <article id="tag-nav">
+        <h3>Elemento &lt;nav&gt;</h3>
+        <p>
+          Nav é um elemento que serve como um menu de navegação principal,
+          com pequenos grupos de links relacionados ao conteúdo da página ou site, 
+          mas dentro do article deve estar relacionado ao conteúdo deste.
+          <br>
+          <small>para usar os links com elementos da página é necessário o uso de IDs</small>
+        </p>
+      </article>
+
+      <article id="tag-aside">
+        <h3>Elemento &lt;aside&gt;</h3>
+        <p>
+          serve para referenciar elementos relacionados entre si, geralmente usados para 
+          marcar barras laterais de conteúdos ou  elementos relacionados porém separados 
+          visualmente.
+        </p>
+        <aside>
+          caso dentro de um &lt;article&gt; deve referenciar-lo, caso fora deve 
+          referenciar o conteúdo da página ou site em si.
+        </aside> 
+      </article>
+
+      <article id="tag-main">
+        <h3>Elemento &lt;main&gt;</h3>
+        <p>
+          Aqui é onde fica todo o conteúdo principal da página, 
+          nela não devem conter o &lt;header&gt; principal.
+        </p>
+      </article>
+    
+      <article id="tag-div">
+        <h3>Elemento &lt;div&gt;</h3>
+        <div>
+          <h4>Dentro da div</h4>
+          <p>
+            O elemento div é um elemento sem valor semântico,
+            ele pode conter diversos outros elementos inclusive outros &lt;div&gt;, 
+            seu uso se torna mais evidente com CSS para estilização.
+          </p>
+        </div>
+      </article>
+
+      <article id="tag-article">
+        <h3>Elemento &lt;article&gt;</h3>
+        <p>
+          Elemento que determina que o conteúdo pode ser interpretado e exportado individualmente
+          de forma a ainda manter o entendimento completo do que ele carrega, sendo independente.
+        </p>
+      </article>
+
+      <article id="tag-section">
+        <h3>Elemento &lt;section&gt;</h3>
+        <p>
+          Representa uma seção temática do documento, normalmente contendo 
+          título e agrupando conteúdo relacionado.
+        </p>
+      </article>
+
+      <article id="tag-footer">
+        <h3>Elemento &lt;footer&gt;</h3>
+        <p>o footer é usado geralmente para conteúdos de rodapé como quem escreveu o conteúdo, 
+          links relacionados, informações sobre o site ou mesmo sobre direitos autorais.
+        </p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <small>Projeto de estudo de Luiz Gustavo Santos da Silva</small>
+  </footer>
+</body>
+</html>
