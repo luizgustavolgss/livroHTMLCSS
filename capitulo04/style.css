@@ -1,0 +1,55 @@
+@import "reset.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+p {
+  width: 400px;
+  text-align: justify;
+  line-height: 1;
+  background: #f6f6f6;
+
+  /* sintaxe abreviada margin: 20px 80px 100px 40px; */
+  margin-top: 20px;
+  margin-right: 80px;
+  margin-bottom:100px;
+  margin-left: 40px;
+
+  /* sintaxe abreviada padding: 35px 50px 20px 0px */
+  padding-top: 35;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  padding-left: 0;
+
+  /* define border como solid */
+  border: solid;
+
+  /* sintaxe abreviada border-width: 10px 30px 50px 15px; */
+  border-top-width: 10px;
+  border-left-width: 30px;
+  border-bottom-width: 50px;
+  border-left-width: 15px;
+
+  /* sintaxe abreviada border-style: dashed dotted solid groove; */
+  border-top-style: dashed;
+  border-right-style: dotted;
+  border-bottom-style: solid;
+  border-left-style: groove;
+
+  /* sintaxe abreviada border-color: red green blue yellow; */
+  border-top-color: red;
+  border-right-color: green;
+  border-bottom-color: blue;
+  border-left-color: yellow;
+}
